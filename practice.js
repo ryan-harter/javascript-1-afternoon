@@ -1,31 +1,31 @@
 //////////////////PROBLEM 1////////////////////
 
 //Create a variable called myName that is a string data type
-
+let myName = "Ryan"
 //Code here
 
 //////////////////PROBLEM 2////////////////////
 
 //Create a variable called myAge that is a number data type
-
+let myAge = 27
 //Code here
 
 //////////////////PROBLEM 3////////////////////
 
 //Create a variable called lovesCode that is a boolean data type
-
+let lovesCode = true
 //Code here
 
 //////////////////PROBLEM 4////////////////////
 
 //Create a variable called greatestFear that is undefined because we fear nothing
-
+let greatestFear;
 //Code here
 
 //////////////////PROBLEM 5////////////////////
 
 //Create a variable called devMountainGoal that is null because we are just starting out
-
+let devMountainGoal = null
 //Code here
 
 //////////////////PROBLEM 6////////////////////
@@ -34,21 +34,25 @@
 //accepts name as its only parameter.
 //greeting should return the string "Hello, "
 //plus the value of the name parameter.
-
+function greeting(name){
+  return "Hello, " + name
+}
 //Code here
 
 //////////////////PROBLEM 7////////////////////
 
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
-
+let newGreeting = function (name){
+  return `Hello, ${name}`
+}
 //Code Here
 
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
 //"apples", "milk", "eggs", "bread"
-
+let groceries = ["apples", "milk", "eggs", "bread"]
 //Code Here
 
 //////////////////PROBLEM 9////////////////////
@@ -58,10 +62,18 @@
 //name (a string), color (a string), age (a number),
 //and goodBoy (a boolean).
 
+let dog = {
+  name: "Keela",
+  color: "Brindle",
+  age: 3,
+  goodBoy: true
+}
 //Code Here
 
 //...access the dog's name from the object and assign it to a
 //variable called devMountainClassPet.
+
+let devMountainClassPet = dog.name
 
 //Code Here
 
@@ -73,7 +85,15 @@
 //If the name parameter is Bryan, return 'Hey Bryan!'
 // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
-
+function nameCheck(name){
+  if (name === "Steven"){
+    return "What is up Steven?"
+  }else if (name === "Bryan"){
+    return "Hey Bryan!"
+  }else {
+    return "Cool name, " + name
+  }
+}
 // Code here
 
 //////////////////PROBLEM 11////////////////////
@@ -81,12 +101,15 @@
 // Create a function called add that takes in two parameters
 // that will be numbers.
 // The add function should return the two parameters added together
-
+function add(num1, num2){
+  let sum = num1 + num2;
+  return sum
+}
 //Code Here
 
 //Now invoke add, passing in the numbers 3 and 4
 //storing the result in the variable mathSum.
-
+let mathSum = add(3,4);
 //Code Here
 
 //////////////////PROBLEM 12////////////////////
@@ -97,7 +120,17 @@
 // If the passed in color equals 'green', return 'green is a solid favorite color'
 // If the passed in color equals 'black', return 'so trendy'
 // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
-
+function faveColorFinder(color){
+  if (color === 'red'){
+    return 'red is a great color'
+  }else if (color === 'green'){
+    return 'green is a solid favorite color'
+  }else if (color === 'black'){
+    return 'so trendy'
+  }else {
+    return 'you need to evaluate your favorite color choice'
+  }
+}
 // Code here
 
 //////////////////PROBLEM 13////////////////////
@@ -122,28 +155,28 @@ function pond() {
 //as strings.
 
 //This array should contain the variable names (as strings) accessible in the global scope.
-let globalScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let globalScope = ["duck"];
 
 //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let bathtubScope = ["duck", "sailorDuck", "rubberDuck"];
 
 //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["duck", "sailorDuck", "rubberDuck", "realDuck"];
+let pondScope = ["duck", "realDuck"];
 
 //////////////////PROBLEM 14////////////////////
 
 //Create a variable called age with your age assigned to you
-
+let age = 27
 // Code Here
 
 // FLASH FORWARD TO NEXT YEAR
 // reassign the value of age to be one greater than it was, because, we all get older
-
+age = 28
 // Code Here
 
 // Good news! We can live forever. Set your age to 999
-
+age = 999
 // Code Here
